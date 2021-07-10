@@ -1,0 +1,60 @@
+body {
+    margin: auto;
+    text-align: center;
+    background-color: #DBFFE8;
+    color: #FFFF;
+    font-family: sans-serif;
+    
+}
+
+.me {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-top: 5px;
+}
+
+.logos {
+    border-radius: 4px;
+    padding: 5px;
+    width: 110px;
+}
+.logos:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
+/* Navbar formatting */
+.navbar {
+    overflow: hidden;
+    background-color: #006625;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 10%;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+  
+.main {
+    padding: 16px;
+    margin-top: 50px;
+    font-family:'Franklin Gothic Medium'
+}
