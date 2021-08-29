@@ -77,6 +77,13 @@ body {
     margin: auto;
 }  
 
+.projects {
+    color: black;
+    font-size: large;
+    width: 60%;
+    margin: auto;
+}
+
 .main {
     padding: 16px;
     margin-top: 50px;
