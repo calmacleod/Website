@@ -30,7 +30,7 @@
                 <div class="personal-image" id="img">
                     <img src="images/me.jpg">
                 </div>
-                <div class="about-me debug" id="txt">
+                <div class="about-me" id="txt">
                     <p id="about-text">
                     </p>
                 </div>
@@ -67,21 +67,5 @@
                 </a>                
             </div>
         </div>
-
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-            }
-        </script>
-
     </body>
 </html>

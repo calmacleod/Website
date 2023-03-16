@@ -19,15 +19,6 @@ h2 {
     margin-bottom:40px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-}
-.sticky + .content {
-    padding-top: 10px;
-}
-
-
 /* Navbar Styling */
 .home-nav {
     margin: auto;
@@ -133,7 +124,6 @@ h2 {
     width: 10vw; 
     min-width: 60px;   
     align-items: center;
-    
 }
 
 .contact-section .box .social-link .text p{
