@@ -1,91 +1,141 @@
 body {
-    margin: auto;
+    padding: 10px 15vw 0 15vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
     text-align: center;
-    background-color: #ffffff;
-    color: #FFFF;
-    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+.below-header {
+    margin-left: 25%; 
+    margin-right: 25%; 
+    border-bottom:3px solid rgb(0, 45, 0); 
+    margin-bottom: 40px;
+}
+
+.main-content {
+    margin-bottom:40px;
+}
+
+/* Navbar Styling */
+.home-nav {
+    margin: auto;
+    display: flex;
+    align-items: stretch;
     
-}
-
-.me {
-    border-radius: 50%;
-    width: 25%;
-    height: 25%;
-    margin-top: 5px;
-}
-
-.logos {
-    border-radius: 4px;
-    padding: 5px;
-    width: 110px;
-    border-radius: 40px;
-}
-
-.logos:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);     
-  }
-
-.testbar {
-    margin: auto;
-    width: 60%;
-    background-color: #006625;
+    height: 50px;
     border-radius: 25px;
-    padding: 5px;
-    position: relative;
-    top: 25px;
-    height: 50px;  
+    
+    background-color: #006625;
 }
 
-.testbar a {
-    display: inline-block;
-    color: #56c980;
+.home-nav a{
+    color: rgba(12, 38, 4, 0.884);
+    background-color: #006625;
+
+    width: 25%;
+    border-radius: 25px;
+    line-height: 250%;
+
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
-    text-decoration: none;
-    border-radius: 40px;
-}
-
-.testbar a:hover {
-    background: #ddd;
-    color: black;
-}
-
-.header_images {
-    display: inline-block;
-    align-items: flex-start;
-    height: 100%;
-    width: 60%;
-    margin: auto;
-    overflow: visible;
-}
-
-.header_images img {
     vertical-align: middle;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-.header_images a {
+    font-weight: bold;
+    font-size: large;
     text-decoration: none;
+
+    transition: background-color 0.4s ease-in-out;
 }
 
-.about {
-    color: black;
-    font-size: large;
-    width: 60%;
-    margin: auto;
-}  
-
-.projects {
-    color: black;
-    font-size: large;
-    width: 60%;
-    margin: auto;
+.home-nav a:hover {
+    background-color: rgb(6, 162, 6);
 }
 
-.main {
-    padding: 16px;
-    margin-top: 50px;
-    font-family:'Franklin Gothic Medium'
+/* About me Section */
+
+.about-section .box{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    align-items: center;
+}
+
+.about-section .box .personal-image{
+    width: 30%;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.personal-image img{
+    width: 100%;
+    border-radius: 100px;
+}
+
+.about-section .box .about-me {
+    width: 60%;
+    flex-shrink: 1;
+    min-width: 200px;
+}
+
+/* Contact Session */
+.contact-section .box{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    align-items: center;
+}
+
+.contact-section .box .social-link {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px;
+    max-width: 100px;
+}
+
+.contact-section .box a{
+    border-radius: 15px;
+    outline: 0px solid black;
+    text-decoration: none;
+    height: 100%;
+    box-shadow: 5px 10px 8px #888888;
+    transition: outline 0.1s ease-in-out;
+}
+
+.contact-section .box a:hover{
+    outline: 2px solid lightslategray;
+    outline-offset: 1px;
+}
+
+.contact-section .box .social-link .image{
+    width: 5vw; 
+    min-width: 40px;   
+}
+
+.contact-section .box .social-link img{
+    width: 100%;    
+}
+
+.contact-section .box .social-link .text{
+    width: 10vw; 
+    min-width: 60px;   
+    align-items: center;
+}
+
+.contact-section .box .social-link .text p{
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Util */
+.debug {
+    outline: 1px solid red;
 }
