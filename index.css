@@ -1,8 +1,32 @@
 body {
-    padding-top: 10px;
     padding: 10px 15vw 0 15vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.below-header {
+    margin-left: 25%; 
+    margin-right: 25%; 
+    border-bottom:3px solid rgb(0, 45, 0); 
+    margin-bottom: 40px;
+}
+
+.main-content {
+    margin-bottom:40px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+.sticky + .content {
+    padding-top: 10px;
+}
+
 
 /* Navbar Styling */
 .home-nav {
@@ -33,12 +57,10 @@ body {
 
 .home-nav a:hover {
     background-color: rgb(6, 162, 6);
+    transition: background-color 0.4s ease-in-out;
 }
 
 /* About me Section */
-.about-section h2 {
-    text-align: center;
-}
 
 .about-section .box{
     margin: auto;
@@ -67,10 +89,6 @@ body {
 }
 
 /* Contact Session */
-.contact-section h2{
-    text-align: center;
-}
-
 .contact-section .box{
     margin: auto;
     display: flex;
@@ -85,6 +103,21 @@ body {
     align-items: center;
     align-items: center;
     flex-direction: column;
+    padding: 3px;
+    max-width: 100px;
+}
+
+.contact-section .box a{
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    text-decoration: none;
+    height: 100%;
+}
+
+.contact-section .box a:hover{
+    border-radius: 10px;
+    outline: 2px solid black;
+    outline-offset: 1px;
+    transition:  0.1s ease-in-out;
 }
 
 .contact-section .box .social-link .image{
@@ -111,5 +144,5 @@ body {
 
 /* Util */
 .debug {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }

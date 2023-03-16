@@ -5,67 +5,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./index.css">
         <title>Callum MacLeod</title>
+        <script>
+            fetch('aboutme.txt')
+                .then(response => response.text())
+                .then(text => document.getElementById('about-text').innerHTML = text)
+        </script>
     </head>
 
     <body>
-        <div class="home-nav">
-            <a href="#home">Home</a>
+        <div id="navbar" class="home-nav">
+            <a href="#about-me">Home</a>
+            <a href="#contact-me">Contact</a>
             <a href="#project">Project</a>
             <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
         </div>
 
         <br>
 
         <!-- About Me -->
-        <div class="about-section debug">
-            <h2 class="debug">About me</h2>
-            <div class="box debug">
+        <div id="about-me" class="about-section main-content">
+            <h2>About me</h2>
+            <div class = "below-header"></div>
+            <div class="box ">
                 <div class="personal-image" id="img">
                     <img src="images/me.jpg">
                 </div>
                 <div class="about-me debug" id="txt">
-                    <p>
-                        Tempor incididunt Lorem deserunt incididunt officia ex do consequat do officia. Ullamco Lorem pariatur cillum exercitation eu tempor quis in pariatur duis et occaecat occaecat amet. Esse aliqua sit occaecat do voluptate duis. Velit officia cupidatat minim Lorem ipsum do anim sit fugiat sit. Amet duis ex do commodo duis nulla laborum id. Mollit sunt sit minim fugiat veniam voluptate ea. Aliquip duis ex eiusmod amet.
+                    <p id="about-text">
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="contact-section debug">
-            <h2 class="debug">Socials</h2>
+        <div id="contact-me" class="contact-section main-content">
+            <h2>Socials</h2>
+            <div class = "below-header" ></div>
             <div class="box">
-                <div class="social-link">
-                    <div class="image debug">
-                        <img src="images/github_png.png">
-                    </div>
-                    <div class="text debug">
-                        <p>
-                            Github
-                        </p>
-                    </div>
-                </div>
-                <div class="social-link">
-                    <div class="image debug">
-                        <img src="images/github_png.png">
-                    </div>
-                    <div class="text debug">
-                        <p>
-                            Github
-                        </p>
-                    </div>
-                </div>
-                <div class="social-link">
-                    <div class="image debug">
-                        <img src="images/github_png.png">
-                    </div>
-                    <div class="text debug">
-                        <p>
-                            Github
-                        </p>
-                    </div>
-                </div>
+                <a href="https://github.com/calmacleod/" class="shrink-border">
+                    <span class="social-link">
+                        <div class="image">
+                            <img src="images/github_png.png">
+                        </div>
+                        <div class="text">
+                            <p>
+                                Github
+                            </p>
+                        </div>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/callum-macleod/">
+                    <span class="social-link">
+                        <div class="image">
+                            <img src="images/linkedin.png">
+                        </div>
+                        <div class="text">
+                            <p>
+                                LinkedIn
+                            </p>
+                        </div>
+                    </span>
+                </a>                
             </div>
         </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+        </script>
+
     </body>
 </html>
