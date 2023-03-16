@@ -28,11 +28,12 @@ h2 {
     height: 50px;
     border-radius: 25px;
     
-    background-color: green;
+    background-color: #006625;
 }
 
 .home-nav a{
-    color: rgb(0, 45, 0);
+    color: rgba(12, 38, 4, 0.884);
+    background-color: #006625;
 
     width: 25%;
     border-radius: 25px;
@@ -44,11 +45,12 @@ h2 {
     font-weight: bold;
     font-size: large;
     text-decoration: none;
+
+    transition: background-color 0.4s ease-in-out;
 }
 
 .home-nav a:hover {
     background-color: rgb(6, 162, 6);
-    transition: background-color 0.4s ease-in-out;
 }
 
 /* About me Section */
@@ -99,16 +101,17 @@ h2 {
 }
 
 .contact-section .box a{
-    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    border-radius: 15px;
+    outline: 0px solid black;
     text-decoration: none;
     height: 100%;
+    box-shadow: 5px 10px 8px #888888;
+    transition: outline 0.1s ease-in-out;
 }
 
 .contact-section .box a:hover{
-    border-radius: 10px;
-    outline: 2px solid black;
+    outline: 2px solid lightslategray;
     outline-offset: 1px;
-    transition:  0.1s ease-in-out;
 }
 
 .contact-section .box .social-link .image{
