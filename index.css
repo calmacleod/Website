@@ -1,6 +1,6 @@
 body {
-    padding: 10px 15vw 0 15vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
 h2 {
@@ -8,132 +8,129 @@ h2 {
     margin-bottom: 5px;
 }
 
-.below-header {
-    margin-left: 25%; 
-    margin-right: 25%; 
-    border-bottom:3px solid rgb(0, 45, 0); 
-    margin-bottom: 40px;
+main {
+    padding: 10px 15vw 0 15vw;
 }
 
-.main-content {
-    margin-bottom:40px;
-}
 
 /* Navbar Styling */
 .home-nav {
-    margin: auto;
     display: flex;
     align-items: stretch;
-    
     height: 50px;
-    border-radius: 25px;
+    background-color: #006625;
+
+    a {
+        color: #ffffff;
+        background-color: #006625;
     
-    background-color: #006625;
+        width: 25%;
+        line-height: 250%;
+    
+        text-align: center;
+        vertical-align: middle;
+    
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+    
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    a:hover {
+        background-color: #00772c;
+    }
 }
 
-.home-nav a{
-    color: rgba(12, 38, 4, 0.884);
-    background-color: #006625;
+/* Sections */
+.main-content {
+    margin-bottom:40px;
 
-    width: 25%;
-    border-radius: 25px;
-    line-height: 250%;
+    .box {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+        align-items: center;
+    }
 
-    text-align: center;
-    vertical-align: middle;
-
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-
-    transition: background-color 0.4s ease-in-out;
-}
-
-.home-nav a:hover {
-    background-color: rgb(6, 162, 6);
+    .divider {
+        margin-left: 25%; 
+        margin-right: 25%; 
+        border-bottom:3px solid rgb(0, 45, 0); 
+        margin-bottom: 40px;
+    }
 }
 
 /* About me Section */
+.about-section {
+    .about-me {
+        width: 60%;
+        flex-shrink: 1;
+        min-width: 200px;
+    }
 
-.about-section .box{
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 20px;
-    align-items: center;
+    .personal-image {
+        width: 30%;
+        min-width: 150px;
+        max-width: 200px;
+
+        img{
+            width: 100%;
+            border-radius: 100px;
+        }
+    }
+
+
 }
 
-.about-section .box .personal-image{
-    width: 30%;
-    min-width: 150px;
-    max-width: 200px;
-}
-
-.personal-image img{
-    width: 100%;
-    border-radius: 100px;
-}
-
-.about-section .box .about-me {
-    width: 60%;
-    flex-shrink: 1;
-    min-width: 200px;
-}
 
 /* Contact Session */
-.contact-section .box{
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 20px;
-    align-items: center;
-}
+.contact-section {
+    a {
+        border-radius: 15px;
+        outline: 0px solid black;
+        text-decoration: none;
+        height: 100%;
+        box-shadow: 5px 10px 8px #888888;
+        transition: outline 0.1s ease-in-out;
 
-.contact-section .box .social-link {
-    display: flex;
-    align-items: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3px;
-    max-width: 100px;
-}
+        .social-link {
+            display: flex;
+            align-items: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 3px;
+            max-width: 100px;
 
-.contact-section .box a{
-    border-radius: 15px;
-    outline: 0px solid black;
-    text-decoration: none;
-    height: 100%;
-    box-shadow: 5px 10px 8px #888888;
-    transition: outline 0.1s ease-in-out;
-}
+            .image{
+                width: 5vw; 
+                min-width: 40px;   
+            }
 
-.contact-section .box a:hover{
-    outline: 2px solid lightslategray;
-    outline-offset: 1px;
-}
+            img {
+                width: 100%;    
+            }
 
-.contact-section .box .social-link .image{
-    width: 5vw; 
-    min-width: 40px;   
-}
+            .text {
+                width: 10vw; 
+                min-width: 60px;   
+                align-items: center;
 
-.contact-section .box .social-link img{
-    width: 100%;    
-}
+                p {
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
 
-.contact-section .box .social-link .text{
-    width: 10vw; 
-    min-width: 60px;   
-    align-items: center;
+    a:hover {
+        outline: 5px solid grey;
+        outline-offset: 1px;
+    }
 }
-
-.contact-section .box .social-link .text p{
-    margin: auto;
-    text-align: center;
-}
-
 
 /* Util */
 .debug {
