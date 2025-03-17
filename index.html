@@ -5,67 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./index.css">
         <title>Callum MacLeod</title>
-        <script>
-            fetch('aboutme.txt')
-                .then(response => response.text())
-                .then(text => document.getElementById('about-text').innerHTML = text)
-        </script>
     </head>
 
-    <body>
-        <div id="navbar" class="home-nav">
-            <a href="#about-me">Home</a>
-            <a href="#contact-me">Contact</a>
-            <a href="#project">Project</a>
-            <a href="#experience">Experience</a>
-        </div>
-
+    <body style="max-width: 400px; margin: 0 auto;">
         <main>
-            <!-- About Me -->
-            <div id="about-me" class="about-section main-content">
-                <h2>About me</h2>
-                <div class = "divider"></div>
-                <div class="box ">
-                    <div class="personal-image" id="img">
-                        <img src="images/me.jpg">
-                    </div>
-                    <div class="about-me" id="txt">
-                        <p id="about-text">
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div style="text-align: center;">
+                <h2>Callum MacLeod</h2>
 
-            <div id="contact-me" class="contact-section main-content">
-                <h2>Socials</h2>
-                <div class = "divider" ></div>
-                <div class="box">
-                    <a target="_blank" href="https://github.com/calmacleod/" class="shrink-border">
-                        <span class="social-link">
-                            <div class="image">
-                                <img src="images/github_png.png">
-                            </div>
-                            <div class="text">
-                                <p>
-                                    Github
-                                </p>
-                            </div>
-                        </span>
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/callum-macleod/">
-                        <span class="social-link">
-                            <div class="image">
-                                <img src="images/linkedin.png">
-                            </div>
-                            <div class="text">
-                                <p>
-                                    LinkedIn
-                                </p>
-                            </div>
-                        </span>
-                    </a>                
-                </div>
+                <img src="/images/me.jpg" style="max-height:100px;" alt="Photo of Callum MacLeod">
+
+                <p style="font-size:0.85rem">Software Developer</p>
+
+                <b>Current</b>
+                <p>Full Stack Ruby on Rails Software Developer</p>
+                <p><em>Igniter Tickets (2023-Present)</em></p>
+                <b>Education</b>
+                <p>Bachelor of Computer Science with Minor in Mathematics (3.9/4.0 GPA)</p>
+                <p><em>Carleton University (2018-2023)</em></p>
             </div>
-        </main>        
+        </main>
+
+        <footer style="border-top: 1px solid lightgrey; padding-top: 2rem; font-size: 0.85rem; text-align: center;">
+            <span>
+                Find me on <a href="https://github.com/calmacleod">Github</a> or <a href="https://www.linkedin.com/in/callum-macleod/">LinkedIn</a>
+            </span>
+            
+        </footer>
     </body>
 </html>
