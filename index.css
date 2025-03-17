@@ -1,4 +1,17 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;;
+}
+
+.text-small { 
+    font-size: 0.85rem;
+}
+
+footer {
+    border-top: 1px solid lightgrey;
+    margin-top: 2rem;
+    padding-top: 1rem;
 }
