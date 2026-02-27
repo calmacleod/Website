@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
 }
 
 main {
@@ -97,16 +97,32 @@ main > p.text-small {
     margin-bottom: 1.5rem;
 }
 
+.location-badge-wrapper {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
 .location-badge {
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
     border: 2px solid #000;
-    margin-bottom: 2rem;
     letter-spacing: 0.5px;
     background: #fff;
     box-shadow: 3px 3px 0 0 #000;
+    color: #000;
+    text-decoration: none;
+    border-bottom: none;
+    transition: all 0.2s ease;
+}
+
+.location-badge-wrapper:hover .location-badge {
+    box-shadow: 5px 5px 0 0 #000;
+    background: #000;
+    color: #fff;
+    transform: translate(-2px, -2px);
 }
 
 .section {
@@ -163,9 +179,9 @@ main > p.text-small {
 
 footer {
     border-top: 1px solid #000;
-    padding-top: 1.5rem;
+    padding-top: 0.75rem;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 0.75rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -186,4 +202,122 @@ a:hover {
     color: #fff;
     padding: 2px 4px;
     margin: 0 -4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 1rem;
+        border-left: none;
+        border-right: none;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .position {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .location-badge {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        box-shadow: 2px 2px 0 0 #000;
+    }
+
+    .location-badge-wrapper:hover .location-badge {
+        box-shadow: 3px 3px 0 0 #000;
+        background: #000;
+        color: #fff;
+        transform: translate(-1px, -1px);
+    }
+
+    footer {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    body {
+        padding-bottom: 4.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        letter-spacing: 1px;
+        padding-bottom: 0.75rem;
+    }
+
+    h2::after {
+        width: 90%;
+        box-shadow: 2px 2px 0 0 #000;
+    }
+
+    h3 {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.75rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .position-title {
+        font-size: 0.9rem;
+    }
+
+    .position-company {
+        font-size: 0.8rem;
+    }
+
+    .position-description {
+        font-size: 0.9rem;
+    }
+
+    .position {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border-left: 2px solid #000;
+    }
+
+    img {
+        margin: 1rem auto;
+        max-height: 80px;
+    }
+
+    .location-badge {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.7rem;
+        box-shadow: 1.5px 1.5px 0 0 #000;
+    }
+
+    .location-badge-wrapper:hover .location-badge {
+        box-shadow: 2px 2px 0 0 #000;
+        background: #000;
+        color: #fff;
+        transform: translate(-1px, -1px);
+    }
+
+    footer {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    body {
+        padding-bottom: 4rem;
+    }
 }
